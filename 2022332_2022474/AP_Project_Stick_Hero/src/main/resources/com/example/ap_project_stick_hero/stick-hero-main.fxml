@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ap_project_stick_hero.MainLoop">
+   <ImageView fitHeight="427.0" fitWidth="638.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@night-city-background-with-many-building-tall-vector-30502030.jpg" />
+   </ImageView>
+   <Rectangle fx:id="Pillar1" arcHeight="5.0" arcWidth="5.0" height="166.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="93.0" y="263.0" />
+   <Rectangle fx:id="Pillar2" arcHeight="5.0" arcWidth="5.0" height="166.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="62.0" x="285.0" y="263.0" />
+   <Text fx:id="scoreLabel" layoutX="149.0" layoutY="52.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Score" textAlignment="CENTER" wrappingWidth="326.6147155761719">
+      <font>
+         <Font name="Hiragino Sans W9" size="35.0" />
+      </font>
+   </Text>
+   <ImageView fx:id="hero" fitHeight="30.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" x="67.0" y="231.0">
+      <Image url="@stick-hero-sprite.png" />
+   </ImageView>
+   <Rectangle fx:id="stick" arcHeight="5.0" arcWidth="5.0" fill="WHITE" stroke="#757070" strokeType="INSIDE" width="4.0" x="93.0" y="261.0" />
+   <ImageView fx:id="cherry" fitHeight="15.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" x="209.0" y="264.0">
+      <image>
+         <Image url="@cherry.png" />
+      </image></ImageView>
+   <Text fx:id="cherryLabel" layoutX="151.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cherries" textAlignment="CENTER" wrappingWidth="326.6147155761719">
+      <font>
+         <Font name="Hiragino Sans W9" size="20.0" />
+      </font>
+   </Text>
+   <Button fx:id="save" layoutX="521.0" layoutY="21.0" mnemonicParsing="false" onAction="#saveProgress" style="-fx-background-color: transparent;" text="Save" textFill="#070707">
+      <font>
+         <Font name="Hiragino Sans W9" size="13.0" />
+      </font>
+   </Button>
+   <Text fx:id="reviveLabel" fill="RED" layoutX="149.0" layoutY="145.0" stroke="#171717" strokeType="OUTSIDE" strokeWidth="2.0" text="Use 5 cherries to revive ?" textAlignment="CENTER" wrappingWidth="326.6147155761719">
+      <font>
+         <Font name="Hiragino Sans W9" size="15.0" />
+      </font>
+   </Text>
+   <Button fx:id="revive" layoutX="189.0" layoutY="154.0" mnemonicParsing="false" onAction="#revive" prefHeight="24.0" prefWidth="247.0" style="-fx-background-color: transparent;" text="Click Here" textFill="#ff0404">
+      <font>
+         <Font name="Hiragino Sans W9" size="17.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="OPEN_HAND" />
+      </cursor>
+   </Button>
+   <ImageView fx:id="monster" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" x="150.0" y="231.0">
+      <image>
+         <Image url="@monster.png" />
+      </image>
+   </ImageView>
+</AnchorPane>

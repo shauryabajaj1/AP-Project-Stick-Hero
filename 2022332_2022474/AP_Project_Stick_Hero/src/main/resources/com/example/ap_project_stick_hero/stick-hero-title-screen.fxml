@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ap_project_stick_hero.StartController">
+   <children>
+      <ImageView fitHeight="435.0" fitWidth="619.0" layoutX="-6.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@night-city-background-with-many-building-tall-vector-30502030.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="135.0" layoutX="249.0" layoutY="294.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="105.0" />
+      <Button layoutX="235.0" layoutY="134.0" mnemonicParsing="false" onAction="#startGame" style="-fx-background-color: transparent;" text="Start Game" textFill="#000000fa">
+         <font>
+            <Font name="Hiragino Sans W9" size="16.0" />
+         </font>
+      </Button>
+      <Text layoutX="177.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Stick Hero" textAlignment="CENTER" wrappingWidth="249.21630859375">
+         <font>
+            <Font name="Hiragino Sans W9" size="40.0" />
+         </font>
+      </Text>
+      <Circle layoutX="34.0" layoutY="307.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle layoutX="34.0" layoutY="354.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle layoutX="34.0" layoutY="400.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle layoutX="566.0" layoutY="307.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle layoutX="566.0" layoutY="354.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle layoutX="566.0" layoutY="400.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <ImageView fitHeight="27.0" fitWidth="23.0" layoutX="290.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@stick-hero-sprite.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="exitButton" layoutX="488.0" layoutY="19.0" mnemonicParsing="false" onAction="#exitGame" style="-fx-background-color: transparent;" text="Exit Game" textFill="#e80000">
+         <font>
+            <Font name="Hiragino Sans W9" size="13.0" />
+         </font>
+      </Button>
+      <Text fx:id="high_Score" layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="High Score" textAlignment="CENTER" wrappingWidth="175.21630859375">
+         <font>
+            <Font name="Hiragino Sans W9" size="17.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
